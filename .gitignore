@@ -1,0 +1,47 @@
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+.python-version
+# Explicit subtrees (covers tools that mis-handle a single trailing slash)
+.venv/lib/
+.venv/bin/
+.venv/include/
+.venv/share/
+.venv/pyvenv.cfg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# MkDocs
+site/
+
+# Testing / typing / tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Playwright
+playwright/.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local PDF builds (uncomment if you do not commit PDFs)
+# *.pdf

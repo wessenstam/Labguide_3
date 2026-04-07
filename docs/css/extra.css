@@ -1,0 +1,57 @@
+/*
+ * Material’s default layout uses a fixed max-width grid (~61rem) so text
+ * doesn’t span the full monitor. These overrides use more of the viewport
+ * while keeping the grid centered and responsive.
+ */
+.md-grid {
+    max-width: min(100vw - 1rem, 88rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Let tables / images use the full content column */
+.md-typeset {
+    max-width: none;
+}
+
+.md-typeset img,
+.md-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Center figure images (single or multiple per paragraph, e.g. mod1). */
+.md-typeset p:has(img) {
+    text-align: center;
+    margin-bottom: 0.35em;
+}
+
+/*
+ * Center *Image …* captions directly under an image paragraph.
+ * Use em:only-of-type so leading spaces before the italic (mod3) do not break matching.
+ */
+.md-typeset p:has(img) + p:has(> em:only-of-type),
+.md-typeset p:has(img) + ul > li:first-child > p:has(> em:only-of-type) {
+    text-align: center;
+    margin-top: 0.15rem;
+    margin-bottom: 1rem;
+    font-size: 0.92em;
+    color: var(--md-default-fg-color--lighter, #626e7c);
+}
+
+.md-typeset p:has(img) + ul > li:first-child:has(> p > em:only-of-type) {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.md-typeset table:not([class]) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.codehilite pre,
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

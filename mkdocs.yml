@@ -1,0 +1,89 @@
+site_name: Labguide
+site_url: https://labguide.devrev.ai/labguide-1/
+dev_addr: '0.0.0.0:8000'
+copyright: Copyright &copy; 2026 DevRev 
+theme:
+  name: material
+  
+  font:
+    text: Helvetica
+    code: Helvetica
+  
+  logo: img/Logo1.svg
+  
+  favicon: img/favicon.ico
+  
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+  features:
+    - search.highlight
+    # Scroll the TOC with the page; highlights feel more “in sync” with viewport
+    - toc.follow
+    - navigation.tracking
+    - navigation.footer
+
+plugins:
+  - search
+  # with-pdf pulls in WeasyPrint and fails on many macOS setups without GTK/Pango.
+  # Re-enable after: pip install mkdocs-with-pdf + WeasyPrint system deps, then set ENABLE_PDF_EXPORT=1 when building PDF.
+  # - with-pdf:
+  #     author: DevRev Technical Enablement
+  #     cover_title: Workshop
+  #     cover_subtitle: DevRev labguide
+  #     cover_logo: img/secretserver.jpg
+  #     copyright: DevRev
+  #     enabled_if_env: ENABLE_PDF_EXPORT
+  #     debug_html: false
+
+extra:
+  generator: false
+
+extra_css:
+  - css/extra.css
+
+nav:
+  - Home: index.md
+  - Setup: mod1/mod1.md
+  - Getting your environment ready: mod2/mod2.md
+  - Parts and Trials: mod3/mod3.md
+  - Articles:
+    - Manual Creation: mod4/mod4.md
+    - Website Scrapping: mod5/mod5.md
+    - AirSync with Confluence: mod6/mod6.md
+  - Testing AI Agent (Computer): mod7/mod7.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
