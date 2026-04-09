@@ -1,5 +1,5 @@
 site_name: Labguide
-site_url: https://labguide.devrev.ai/labguide-1/
+site_url: https://labguide.devrev.ai/labguide-3/
 dev_addr: '0.0.0.0:8000'
 copyright: Copyright &copy; 2026 DevRev 
 theme:
@@ -48,6 +48,7 @@ theme:
     - toc.follow
     - navigation.tracking
     - navigation.footer
+    - content.code.copy
 
 plugins:
   - search
@@ -70,20 +71,28 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Setup: mod1/mod1.md
-  - Getting your environment ready: mod2/mod2.md
-  - Parts and Trials: mod3/mod3.md
-  - Articles:
-    - Manual Creation: mod4/mod4.md
-    - Website Scrapping: mod5/mod5.md
-    - AirSync with Confluence: mod6/mod6.md
-  - Testing AI Agent (Computer): mod7/mod7.md
+  - Create and configure Agent: mod1/mod1.md
+  - Enable and configure Computer for End-Users: mod2/mod2.md
+  - Chrome Extension: mod3/mod3.md
+  - Create Workflow for End-Users: mod5/mod5.md
+  - Run Workflow: 
+    - Test using a conversation: mod6/mod6.md
+    - See the log of a workflow: mod7/mod7.md
 
 markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
