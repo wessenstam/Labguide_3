@@ -18,6 +18,7 @@
 .md-content img {
     max-width: 100%;
     height: auto;
+    border: 1px solid #4707D1;
 }
 
 /* Center figure images (single or multiple per paragraph, e.g. mod1). */
