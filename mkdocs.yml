@@ -75,8 +75,8 @@ nav:
   - Create and configure Agent: mod1/mod1.md
   - Create the workflow: mod2/mod2.md
   - Run Workflow: 
-    - Test using a conversation: mod6/mod6.md
-    - See the log of a workflow: mod7/mod7.md
+    - Test using a conversation: mod3/mod3.md
+    - See the log of a workflow: mod4/mod4.md
 
 markdown_extensions:
   - tables

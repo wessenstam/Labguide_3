@@ -1,102 +1,64 @@
-# Lab 1\. Exercise 2: Creating the KB articles {#lab-1.-exercise-2:-creating-the-kb-articles}
+# See the log of a workflow
 
 **Objective**
 
-Create articles that can be used to answer questions from humans by using AI.
+Check the runs (logs) of workflows
 
 **What You Will Build**
 
-* Manual creation of Articles
-
-* Website scrapping
-
-* Use AirSync from Confluence or Notion
+* Check the workflows that have been run
 
 **Exercise steps**
 
-## Manual creation of Articles {#manual-creation-of-articles}
+➔ Navigate back to the tab where your DevRev environment is.
+➔ Go to the **Settings** menu and click on **Workflows**.
+➔ In the Workflow list, click the **IT or HR switcher** workflow and the canvas we saw/created earlier is shown.
+➔ At the top, just under the breadcrumbs you will see two tabs, **View** to see the canvas, but also the **Run** tab. Click this tab and see the runs that have ran and/or are in waiting state.
 
-➔  Go to the **Settings** menu and click on **Knowledge Base**. You can find the settings menu via the cogwheel icon all the way at the top of the sidebar menu, next to your initials   
-![](../images/image020.png)
+![](../images/image073.png)
 
-*Image 14\. Settings icon next to user initials.*
+  *Image 70. The Runs Tab.*  
 
-➔ Then in the top right of the window click **\+Article**
+➔ Click one of the **Waiting** runs and see the flow of the conversation. Below screen shot is for the IT related questions. 
 
-![](../images/image021.png)
+![](../images/image074.png){ width=50% }
 
-*Image 15\. Create Article..*
+  *Image 71. The run for IT agent.*  
 
-➔ In the screen that appears provide the following information:
+➔ As you can see the run is running in the **IT Agent** node as it has a hourglass on the node.
 
-1. **Title:** How to connect a printer to Windows or Mac O/S  
-2. **Describe your article:** An article that describes how to connect a printer on Windows and Mac O/S       
-3. **Part:** As part he selects IT \-\> Helpdesk as this is an article that could be used in Helpdesk tasks
+![](../images/image075.png)
 
-➔ Leave the rest default, there are three options shown
+  *Image 72. The running IT node.*  
 
-* Create Page — use the rich-text editor to author content directly in DevRev  
-* Add a link — paste a URL to an externally hosted article (opens in a new tab for readers)  
-* Upload a file — attach a PDF or MS Word document
+➔ For a HR Agent (hence the remark to remember the time of the conversation) you will see that the hourglass is on the HR Agent node.
 
-![](../images/image022.png)
+![](../images/image076.png){ width=45% }
 
-*Image 16\. Article options overview.*
+  *Image 73. The running HR node .*  
 
-➔ Select the Create a Page option  
-➔ Open a new tab and use ChatGPT with the prompt  
-    “*How to connect to a network printer for Windows or Mac O/S*”  
-➔ Copy the answer into the Article on the other tab
+!!! Abstract "Good to know"
+    When there is an Error node, as shown below.
 
-![](../images/image023.png)
+    ![](../images/image077.png)
 
-*Image 17\. Article copy from ChatGPT.*
+    *Image 74. A failed run.*  
 
-➔ Click the Create button in the top right corner of the screen. In the menu that opens click the Publish.
+    Click the run and get more information on the nodes and the run. The node that has a **red border and dot** with an exclamation mark is the failed noe in the workflow.
 
-![](../images/image024.png)
+    ![](../images/image078.png){ width=30% }
 
-*Image 18\. Create and Publish.*
+    *Image 75. The failed run nodes.*
 
-!!! Info
-    The other options are:
+    When the failing node is clicked, more detailed infomation will be shown to help in the troubleshooting.
+
+    ![](../images/image079.png){ width=30% }
+
+    *Image 76. The detailed failed node.*
     
-    1. **Save Draft:** the current changes are not deleted. It might be that some more research is needed to create a good article.  
-    2. **Publish:** This can be used to have another Administrator looking at the article to check the information and then publish the article.
+    The reason for this failure was that the **Prompt** for the agent has not been setup and it could not reason and answer the question.
 
-
-➔ Use the breadcrumbs at the top of the screen and click the Knowledge Base text  
-
-![](../images/image025.png)
-
-*Image 19\. Follow the breadcrumbs.*
-
-➔ Create a new article using the same steps as before and provides the following parameters:
-
-1. **Title:** Premier home insurance  
-2. **Describe your article:** An article that describes the Policy for Premier home insurance      
-3. **Part:** As part he selects Insurance as this article is related to that part
-
-➔ Click the icon Add a link and paste this link [https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf](https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf) and click Confirm.  
-![](../images/image026.png)
-
-*Image 20\. Add an article with a Link*
-
-➔ **Publishes** the article and uses the *Knowledge Base* breadcrumb to get back to the overview of articles.  
-➔ Create a new article with the following parameters:
-
-1. **Title:** Home emergency \- Insurance policy  
-2. **Describe your article:** An article that describes the Home emergency \- Insurance policy      
-3. **Part:** As part select *Insurance* as this article is related to that part
-
-➔ Download this file from the Hastings website [https://www.hastingsdirect.com/documents/home/HD-HH-GW-AXA-10-23.pdf](https://www.hastingsdirect.com/documents/home/HD-HH-GW-AXA-10-23.pdf) and use the downloaded file for the upload.  
-➔ Click the **Upload a File** option and use the just download file as Upload  
-
-![](../images/image027.png)
-
-*Image 21\. An article with an uploaded file.*
-
-➔ Publishes the article.
+This workshop has been using some simple agent configurations and should be seen as a starting point for next modules.
 
 <hr>
 
