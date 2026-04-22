@@ -127,7 +127,7 @@ Now we have a starting point that we need to configure to do what we are looking
 
 ➔ Click the **Conversation** node
 
-➔ In the right pane that appeared, make sure all fields are empty. Use the Clen button to make that happen. Collapse the right pane by clicking the double arrows in the top left corener of the right pane.
+➔ In the right pane that appeared, make sure all fields are empty by using the **Clean** button. Collapse the right pane by clicking the double arrows in the top left corener of the right pane.
 
 ➔ In the canvas, click the arrow between the **Conversation Created** and **Talk to Agent** node, and hit the **delete** button on your keyboard.
 
