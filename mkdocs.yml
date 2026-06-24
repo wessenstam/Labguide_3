@@ -5,9 +5,7 @@ copyright: Copyright &copy; 2026 DevRev
 theme:
   name: material
   
-  font:
-    text: Helvetica
-    code: Helvetica
+  font: false  # disable Google Fonts; Chip fonts self-hosted in css/extra.css
   
   logo: img/Logo1.svg
   

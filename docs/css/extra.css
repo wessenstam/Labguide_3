@@ -56,3 +56,83 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+/* ============================================================
+   DevRev Chip fonts (self-hosted WOFF2)
+   ============================================================ */
+
+@font-face {
+  font-family: "Chip Text";
+  src: url("fonts/ChipText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chip Text";
+  src: url("fonts/ChipText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chip Text";
+  src: url("fonts/ChipText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chip Display";
+  src: url("fonts/ChipDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chip Display";
+  src: url("fonts/ChipDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chip Mono";
+  src: url("fonts/ChipMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --md-text-font: "Chip Text";
+  --md-code-font: "Chip Mono";
+  --md-text-font-family: "Chip Text", system-ui, -apple-system, sans-serif;
+  --md-code-font-family: "Chip Mono", ui-monospace, monospace;
+}
+
+body,
+input,
+.md-typeset {
+  font-family: "Chip Text", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-header__title,
+.md-nav__title {
+  font-family: "Chip Display", "Chip Text", sans-serif;
+  font-weight: 700;
+}
+
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd,
+.md-typeset .md-code__content {
+  font-family: "Chip Mono", ui-monospace, monospace;
+}
